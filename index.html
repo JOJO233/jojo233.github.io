@@ -15,7 +15,7 @@
         <!-- 播放器主体区域 -->
         <div class="play_wrap" id="player">
             <div class="search_bar">
-                <img src="playerimg/aojiao.jpg" alt=""  width="50"/>
+                <img src="img/aojiao.jpg" alt=""  width="50"/>
                 <!-- 搜索歌曲 -->
                 <input type="text" autocomplete="off" v-model="query" @keyup.enter="searchMusic" />
             </div>
@@ -30,13 +30,13 @@
                             <span v-if="item.mvid!=0"  @click="playMv(item.mvid)" ><i></i></span>
                         </li>
                     </ul>
-                    <img src="playerimg/line.png" class="switch_btn" alt="">
+                    <img src="img/line.png" class="switch_btn" alt="">
                 </div>
                 <!-- 歌曲信息容器 -->
                 <div class="player_con" :class="{playing:isPlaying}">
-                    <img src="playerimg/player_bar.png" class="play_bar" />
+                    <img src="img/player_bar.png" class="play_bar" />
                     <!-- 黑胶碟片 -->
-                    <img src="playerimg/disc.png" class="disc autoRotate" />
+                    <img src="img/disc.png" class="disc autoRotate" />
                     <img :src="musicPicUrl" class="cover autoRotate" />
                 </div>
                 <!-- 评论容器 -->
@@ -51,7 +51,7 @@
                             </dd>
                         </dl>
                     </div>
-                    <img src="playerimg/line.png" class="right_line">
+                    <img src="img/line.png" class="right_line">
                 </div>
             </div>
             <div class="audio_con">
